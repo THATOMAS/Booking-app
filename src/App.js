@@ -1,7 +1,7 @@
 import React from "react"
 import "./index.css"
 
-import {logo,centerImage}  from "./SVG";
+import {logo,centerImage,cursor}  from "./SVG";
 
 const App = ()=>{
   return(
@@ -13,6 +13,9 @@ const App = ()=>{
       
       <div className="center-image">
         {centerImage()}
+      </div>
+      <div className="cursor">
+        {cursor()}
       </div>
     </section>
     

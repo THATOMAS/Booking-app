@@ -7,7 +7,7 @@ body {
 
 .brand-logo {
   display: flex;
-  margin-top: 68.58px;
+  margin-top: 6.5em;
   justify-content: center;
 }
 .center-image {
@@ -15,4 +15,9 @@ body {
   justify-content: center;
   flex-grow: 1;
   margin-top: 56.3px;
+}
+.cursor {
+  display: flex;
+  justify-content: center;
+  margin-top: 6.5em;
 }
