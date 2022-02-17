@@ -5,8 +5,8 @@ import {logo,centerImage,cursor}  from "./SVG";
 
 const App = ()=>{
   return(
-    <>
-    <section>
+    <main>
+    <section className="FirstPage">
       <div className="brand-logo">
         {logo()}
       </div>
@@ -18,8 +18,11 @@ const App = ()=>{
         {cursor()}
       </div>
     </section>
+    <section className="SecondPage">
+
+    </section>
     
-    </>)
+    </main>)
 
 }
 
