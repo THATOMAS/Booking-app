@@ -1,16 +1,22 @@
-import {AiFillChrome} from "react-icons/ai"
+import React from "react"
+import "./index.css"
 
+import {logo,centerImage}  from "./SVG";
 
 const App = ()=>{
   return(
-    <main>
-      <div className="container">
-        <div className="title">
-          <h2>our reviews</h2>
-        </div>
+    <>
+    <section>
+      <div className="brand-logo">
+        {logo()}
       </div>
-    </main>
-  )
+      
+      <div className="center-image">
+        {centerImage()}
+      </div>
+    </section>
+    
+    </>)
 
 }
 

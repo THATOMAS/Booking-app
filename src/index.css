@@ -1,0 +1,18 @@
+body {
+  background: url("/src/assets/SVGs/background\ vector2.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+.brand-logo {
+  display: flex;
+  margin-top: 68.58px;
+  justify-content: center;
+}
+.center-image {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-top: 56.3px;
+}
