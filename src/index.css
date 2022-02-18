@@ -10,11 +10,6 @@
 body {
   height: 100vh;
   overflow: hidden;
-  background-image: url("/src/assets/SVGs/background\ vector2.svg");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
-  background-attachment: scroll;
 }
 
 main {
