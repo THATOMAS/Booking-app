@@ -1,3 +1,22 @@
+.FirstPage {
+  overflow: hidden;
+  background-image: url("/src/assets/SVGs/background\ vector2.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("/src/assets/SVGs/background\ vector2.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
 main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -5,31 +24,42 @@ main {
   overflow: hidden;
 }
 section {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
   height: 100vh;
   scroll-snap-align: start;
 }
 
-body {
-  background: url("/src/assets/SVGs/background\ vector2.svg");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
-  overflow: hidden;
-}
-
+/*start of First Page from the top */
 .brand-logo {
   display: flex;
-  margin-top: 6.5em;
+  margin: 2.5em;
   justify-content: center;
 }
 .center-image {
   display: flex;
   justify-content: center;
-  flex-grow: 1;
-  margin-top: 56.3px;
+  margin: 6.5em;
+  flex-grow: 0;
 }
 .cursor {
   display: flex;
   justify-content: center;
-  margin-top: 6.5em;
+  margin-top: 2.5em;
+}
+
+/* End of First Page */
+
+/* start of second Page */
+
+.mini-logo {
+  margin-left: 5em;
+  margin-top: -25em;
+}
+
+.topCursor {
+  display: flex;
+  justify-content: center;
+  margin-top: -119.5em;
 }
