@@ -1,7 +1,11 @@
 import React,{ useRef } from "react"
 import "./index.css"
 
-import {logo,centerImage,cursor,miniLogo,topCursor,pageText}  from "./SVG";
+import {logo,
+bottomCursor,
+miniLogo,
+topCursor,
+pageText}  from "./SVG";
 
 
 const App = ()=>{
@@ -20,16 +24,16 @@ function toBottom () {
 
 
   return(
-<main className="container">
+<main >
     <section className="FirstPage" id="FirstPage" ref={titleRef}>
       <div className="brand-logo">{logo()}</div>
       <div className="center-image"><img src={require("./assets/SVGs/centerpic.jpg")} alt=""/></div>
-      <div className="cursor" onClick={toBottom}>{cursor()}</div>
-     
+      <div className="toBottom" onClick={toBottom}>{bottomCursor()}</div>
     </section>
     
+
     <section className="SecondPage" id="SecondPage" ref={titleRef2}>
-      <div classname="topCursor" onClick={toTop}>{topCursor()}</div>
+      <div classname="toTop" onClick={toTop}>{topCursor()}</div>
       <div className="mini-logo">{miniLogo()}</div>
       <div className="pageText">{pageText()}</div>  
     </section>
