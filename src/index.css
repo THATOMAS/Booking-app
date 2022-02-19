@@ -1,30 +1,29 @@
-body{
-    margin:4em;
-    padding:0;
-    box-sizing:border-box;
-    font-family : sans-serif;
-    color:white;
-    overflow:hidden;
-    background:url("./assets/SVGs/background\ vector2.svg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment:scroll;
+body {
+  margin: 4em;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+  overflow: hidden;
+  background: url("./assets/SVGs/background\ vector2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
-.container{
-    scroll-snap-type: y mandatory;
-    overflow-y:scroll;
-    height:100vh;
-    overflow:hidden;
-  }
-
-section{
-    
-    height:100vh;
-    display:grid;
-    justify-items:center;
-    scroll-snap-align:start;
-    
-    
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  overflow: hidden;
 }
 
+section {
+  line-height: 20vh;
+  display: grid;
+  justify-items: center;
+  scroll-snap-align: start;
+}
+.SecondPage{
+  height: 125vh;
+}
