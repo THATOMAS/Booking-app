@@ -1,0 +1,92 @@
+This is just some tips on how to execute the onClick scroll to Top or bottom for the snap effect .
+
+Scroll to a React element
+Now the next step is to figure out how we can apply this smooth scrolling behavior on a React component. 
+We can still use the Element.scrollIntoView() method, but we need to grab the component’s underlaying HTML element to access it.
+
+First, let’s convert our example to a React functional component.
+
+#######
+
+
+import React from 'react'
+
+const Article = () => {
+    return (
+        <article>
+            <h1>A React article for Latin readers</h1>
+            <p>...</p>
+            <p>...</p>
+            <button>Back to the top</button>
+        </article>
+    )
+}
+
+###########
+
+
+We could still give the <h1> element an id attribute. 
+But to do it the React way, we’ll give a reference instead with the useRef hook.
+ You can read more about the useRef() hook in the official React documentation.
+
+
+############
+
+import React, { useRef } from 'react'
+
+const Article = () => {
+    const titleRef = useRef()
+
+    return (
+        <article>
+            <h1 ref={titleRef}>A React article for Latin readers</h1>
+            // Rest of the article's content...
+            <button>Back to the top</button>
+        </article>
+    )
+}
+
+##############
+
+Now we need to handle the user clicking the button to scroll back to the top. We can use an onClick event handler for that. You can read more about event handling in the official React documentation.
+
+import React, { useRef } from 'react'
+
+
+
+###################
+
+const Article = () => {
+    const titleRef = useRef()
+
+    function handleBackClick() {
+        // Scroll back to the title element...
+    }
+
+    return (
+        <article>
+            <h1 ref={titleRef}>A React article for Latin readers</h1>
+            // Rest of the article's content...
+            <button onClick={handleBackClick}>Back to the top</button>
+        </article>
+    )
+}
+
+#############################
+Within the event handler, we now have access to the title element through its reference. And we can scroll to the title element like we did in the vanilla JavaScript example.
+
+
+###################
+
+const titleRef = useRef()
+
+function handleBackClick() {
+    titleRef.current.scrollIntoView({ behavior: 'smooth' })
+}
+
+
+
+#############
+
+
+By using useRef() in a React component, we have an entry to the underlaying HTML element. This gives us full access to all of the powerful DOM APIs.

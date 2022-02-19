@@ -25,5 +25,8 @@ section {
   scroll-snap-align: start;
 }
 .SecondPage{
-  height: 125vh;
+  height: 110vh;
+}
+button{
+  display:none;
 }
