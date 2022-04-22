@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import {Link,Outlet} from 'react-router-dom'
+
 
 const LandingPage = () => {
   const titleRef = useRef();
@@ -13,28 +15,28 @@ const LandingPage = () => {
   }
 
   return (
-    <main>
+    <main className='LandingPage'  >
       <section className="FirstPage" id="FirstPage" ref={titleRef}>
-        <div className="brand-logo">
-          <img src={require("./assets/landingPage/logo.jpg")} alt="" />
-        </div>
+        <Link to ='/welcome'className="brand-logo">
+          <img src={require("../assets/landingPage/logo.jpg")} alt="" />
+        </Link>
         <div className="center-image">
-          <img src={require("./assets/landingPage/pageImage.jpg")} alt="" />
+          <img src={require("../assets/landingPage/pageImage.jpg")} alt="" />
         </div>
         <div className="toBottom" onClick={toBottom}>
-          <img src={require("./assets/landingPage/bottomCursor.jpg")} alt="" />
+          <img src={require("../assets/landingPage/bottomCursor.jpg")} alt="" />
         </div>
       </section>
 
       <section className="SecondPage" id="SecondPage" ref={titleRef2}>
         <div classname="toTop" onClick={toTop}>
-          <img src={require("./assets/landingPage/topCursor.jpg")} alt="" />
+          <img src={require("../assets/landingPage/topCursor.jpg")} alt="" />
         </div>
-        <div className="mini-logo">
-          <img src={require("./assets/landingPage/miniLogo.jpg")} alt="" />
-        </div>
+        <Link to='/welcome' className="mini-logo">
+          <img src={require("../assets/landingPage/miniLogo.jpg")} alt="" />
+        </Link>
         <div className="pageText">
-          <img src={require("./assets/landingPage/pageText.jpg")} alt="" />
+          <img src={require("../assets/landingPage/pageText.jpg")} alt="" />
         </div>
       </section>
     </main>
