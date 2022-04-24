@@ -1,9 +1,9 @@
 import React from "react";
 
 const Furniture = () => {
-    return <div>
+    return <section>
       <h1>Furniture Page</h1>
-      </div>;
+      </section>;
   
 }
 

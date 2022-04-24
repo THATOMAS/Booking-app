@@ -2,9 +2,9 @@ import React from "react";
 
 const aboutUs = () => {
 
-    return <div>
+    return <section>
       <h1>About Us Page</h1>
-    </div>;
+    </section>;
   
 }
 

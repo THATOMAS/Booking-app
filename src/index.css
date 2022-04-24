@@ -1,4 +1,6 @@
 body {
+  font-family: 'Quicksand',
+  sans-serif;
   margin: 4em;
   padding: 0;
   box-sizing: border-box;
@@ -104,4 +106,74 @@ section {
   }
 }
 
+/* First page */
+h1{
+  font-family: 'Quicksand';
+  font-size: 144px;
+}
+
+span{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+}
+span img{
+  height:min-content;
+  padding-left:10px ;
+}
+
+.navLink{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+/* Visited link    */
+.navLink:hover {
+  color: #E58411;
+}
+
+.navLink:active {
+  color: #548D29;
+}
+
+
+.navContainer{
+padding-left: -88px;
+padding-top: -88px;
+display: flex;
+justify-content: space-between;
+align-items:center;
+width: 100vw;
+height: fit-content;
+
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width:100vw;
+  /* background: orange; */
+}
+
+.logoContainer{
+  width:fit-content;
+  height:fit-content;
+}
+
+.navItems{
+  padding-right: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40vw;
+  font-family: 'Quicksand';
+}
+.homeLogo{
+  width: fit-content;
+  height: fit-content;
+  
+}
 

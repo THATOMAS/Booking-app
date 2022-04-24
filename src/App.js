@@ -11,20 +11,19 @@ import LandingPage from "./routes/LandingPage";
 import Home from "./routes/HomePage";
 import Furniture from "./routes/Furniture";
 import Shop from "./routes/Shop";
+import AboutUs from "./routes/AboutUs";
 
 const App = () => {
   return (
     <main>
       <Router>
-        <Outlet />
-
         <Routes>
           <Route path="/" exact element={<LandingPage />} />
           <Route path="/welcome" element={<Home />} />
-          <Route path="furniture" element={<Furniture />} />
-          <Route path="shop" element={<Shop />} />
-          <Route path="aboutUs" element={<aboutUs />} />
-          <Route path="contactUs" element={<aboutUs />} />
+          <Route path="/furniture" element={<Furniture />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<AboutUs />} />
         </Routes>
       </Router>
     </main>

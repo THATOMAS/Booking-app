@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 const Shop = () => {
-    return <div>
+    return <section>
       <h1>Shop Page</h1>
-    </div>;
+    </section>;
   
 }
 
