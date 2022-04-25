@@ -1,14 +1,14 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { homeLOGO } from "../SVG";
 const backgroundIMG = require('../assets/landingPage/crisscross.jpg')
 
 const Home = () => {
-document.body.style.background = `white`
+document.body.style.backgroundImage = `url(${backgroundIMG})`
     return (
-      <div className="navContainer">
-        <img src={require('../assets/homePage/homeLOGO.jpg')} alt=''/>
+      <section className="navContainer">
+        {homeLOGO()}
         <div className="navItems">
           <Link to ='furniture' className='navLink'>
           <span>
@@ -26,7 +26,7 @@ document.body.style.background = `white`
             <h2>Contact Us</h2>
           </Link>
         </div>
-      </div>
+      </section>
     );
   }
 
