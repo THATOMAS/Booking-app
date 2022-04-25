@@ -14,7 +14,7 @@ body {
   background-attachment: scroll;
 }
 
-
+/* Landing page */
 main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -56,6 +56,7 @@ main {
   animation-duration: 0s;
 }
 
+/* animated landing page logo */
 @keyframes vibrate {
   0% {
     transform: scale(1.015);
@@ -118,62 +119,42 @@ span{
   align-items: center;
   width: max-content;
 }
-span img{
-  height:min-content;
-  padding-left:10px ;
-}
+
 
 .navLink{
   text-decoration: none;
   color: black;
   font-size: large;
+  display: flex;
+  padding-left: 5vw;
 }
 
-/* Visited link    */
 .navLink:hover {
   color: #E58411;
 }
 
-.navLink:active {
-  color: #548D29;
-}
 
-
-.navContainer{
-padding-left: -88px;
-padding-top: -88px;
-display: flex;
-justify-content: space-between;
+.HomePage{
 align-items:center;
 width: 100vw;
 height: fit-content;
+display: grid;
+grid-template-columns: 50vw 50vw;
+grid-template-rows: 20vh 60vh 20vh;
+
 
 }
 
-.navbar{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-between;
-  width:100vw;
-  /* background: orange; */
-}
 
-.logoContainer{
-  width:fit-content;
-  height:fit-content;
-}
+
 
 .navItems{
-  padding-right: 10vw;
+  
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 40vw;
+  justify-content:flex-start;
+  align-items:flex-start;
   font-family: 'Quicksand';
 }
-.homeLogo{
-  width: fit-content;
-  height: fit-content;
-  
-}
+
 
