@@ -1,13 +1,16 @@
 
-import React from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
 
-import { homeLOGO } from "../SVG";
+import { homeLOGO,furnCur1,furnCur2} from "../SVG";
+  
+
 const backgroundIMG = require('../assets/landingPage/crisscross.jpg')
 
-
-
 const Home = () => {
+
+  const [show,setShow] = useState(true)
+
 document.body.style.backgroundImage = `url(${backgroundIMG})`
     return (
       <section className="HomePage">
@@ -26,10 +29,17 @@ document.body.style.backgroundImage = `url(${backgroundIMG})`
         width:'50vw',
         height:'20vh'
         }}>
-          <Link to ='furniture' className='navLink'>
+          <Link 
+          to ='furniture' 
+          className='navLink'
+          onMouseOver={()=> setShow(false)}
+          onMouseOut={()=>setShow(true)}
+          >
           <span>
             <h2>Furniture</h2>
-            <img scr={require('../assets/homePage/furnitureCursor.jpg')} alt=''/>
+            <div className="furnCur">
+            {show? furnCur1():furnCur2()}
+            </div>
           </span>
           </Link>
           <Link to='shop' className='navLink'>

@@ -119,14 +119,17 @@ span{
   align-items: center;
   width: max-content;
 }
-
+.furnCur{
+  padding-left:1em;
+  padding-top:0.5em
+}
 
 .navLink{
   text-decoration: none;
   color: black;
   font-size: large;
   display: flex;
-  padding-left: 5vw;
+  padding-left: 1vw;
 }
 
 .navLink:hover {
