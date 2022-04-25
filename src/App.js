@@ -20,10 +20,10 @@ const App = () => {
         <Routes>
           <Route path="/" exact element={<LandingPage />} />
           <Route path="/welcome" element={<Home />} />
-          <Route path="/furniture" element={<Furniture />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact-us" element={<AboutUs />} />
+          <Route path="/welcome/furniture" element={<Furniture />} />
+          <Route path="/welcome/shop" element={<Shop />} />
+          <Route path="/welcome/about-us" element={<AboutUs />} />
+          <Route path="/welcome/contact-us" element={<AboutUs />} />
         </Routes>
       </Router>
     </main>

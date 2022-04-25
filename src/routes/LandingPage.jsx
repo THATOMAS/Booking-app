@@ -15,8 +15,8 @@ const LandingPage = () => {
   }
 
   return (
-    <main className='LandingPage'  >
-      <section className="FirstPage" id="FirstPage" ref={titleRef}>
+    <section className='LandingPage'  >
+      <article className="FirstPage" id="FirstPage" ref={titleRef}>
         <Link to ='/welcome'className="brand-logo">
           <img src={require("../assets/landingPage/logo.jpg")} alt="" />
         </Link>
@@ -26,9 +26,9 @@ const LandingPage = () => {
         <div className="toBottom" onClick={toBottom}>
           <img src={require("../assets/landingPage/bottomCursor.jpg")} alt="" />
         </div>
-      </section>
+      </article>
 
-      <section className="SecondPage" id="SecondPage" ref={titleRef2}>
+      <article className="SecondPage" id="SecondPage" ref={titleRef2}>
         <div classname="toTop" onClick={toTop}>
           <img src={require("../assets/landingPage/topCursor.jpg")} alt="" />
         </div>
@@ -38,8 +38,8 @@ const LandingPage = () => {
         <div className="pageText">
           <img src={require("../assets/landingPage/pageText.jpg")} alt="" />
         </div>
-      </section>
-    </main>
+      </article >
+    </section>
   );
 };
 

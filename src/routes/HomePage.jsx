@@ -2,13 +2,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import {homeLogo} from '../SVGs'
+
 const backgroundIMG = require('../assets/landingPage/crisscross.jpg')
 
+
+
 const Home = () => {
-document.body.style.background = `white`
+document.body.style.backgroundImage = `url(${backgroundIMG})`
     return (
       <div className="navContainer">
-        <img src={require('../assets/homePage/homeLOGO.jpg')} alt=''/>
+        {homeLogo()}
         <div className="navItems">
           <Link to ='furniture' className='navLink'>
           <span>
