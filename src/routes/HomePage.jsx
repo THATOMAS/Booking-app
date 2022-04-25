@@ -1,8 +1,11 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { homeLOGO } from "../SVG";
 const backgroundIMG = require('../assets/landingPage/crisscross.jpg')
+
+
 
 const Home = () => {
 document.body.style.backgroundImage = `url(${backgroundIMG})`
