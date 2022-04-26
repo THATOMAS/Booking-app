@@ -113,30 +113,41 @@ h1{
   font-size: 144px;
 }
 
-span{
-  display: flex;
-  flex-direction: row;
+.furniture-button{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   align-items: center;
-  width: max-content;
+}
+
+#furn-span {
+  padding-left:0.5em;
 }
 .furnCur{
   padding-left:1em;
   padding-top:0.5em
 }
 
-.navLink{
-  text-decoration: none;
+
+.navItem{
+text-decoration: none;
   color: black;
   font-size: large;
   display: flex;
+  align-items: center;
   padding-left: 1vw;
 }
+.navItemOff{
+  display:none;
+}
 
-.navLink:hover {
+.navItem:active {
   color: #E58411;
 }
 
-
+li{
+  text-decoration: none;
+}
 .HomePage{
 align-items:center;
 width: 100vw;
@@ -161,3 +172,54 @@ grid-template-rows: 20vh 60vh 20vh;
 }
 
 
+
+.furniture-submenu{
+  width: 20em;
+  position: absolute;
+  list-style: none;
+  text-align: start;
+}
+
+.furniture-submenu li{
+  font-family: 'Quicksand';
+  background:rgba(229, 132, 17,0.3);
+  border-radius: 10px;
+  margin: 0.2em;
+  text-align: start;
+  width: 100%;
+  border: 1px solid black;
+  color: black;
+  font-size: 25px;
+  position: relative;
+}
+
+.furniture-submenu.clicked{
+  display:none
+}
+
+.furniture-submenu li:hover{
+  transform: scale(1.1);
+  transition: ease-in-out;
+  
+}
+
+.submenu-item{
+  display:block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  padding: 16px;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}

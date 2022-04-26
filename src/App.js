@@ -21,6 +21,15 @@ const App = () => {
           <Route path="/" exact element={<LandingPage />} />
           <Route path="/welcome" element={<Home />} />
           <Route path="/welcome/furniture" element={<Furniture />} />
+          <Route
+            path="/welcome/furniture/ChairsAndSofas"
+            element={<Furniture />}
+          />
+          <Route path="/welcome/furniture/Tables" element={<Furniture />} />
+          <Route
+            path="/welcome/furniture/LightsAndChandeliers"
+            element={<Furniture />}
+          />
           <Route path="/welcome/shop" element={<Shop />} />
           <Route path="/welcome/about-us" element={<AboutUs />} />
           <Route path="/welcome/contact-us" element={<AboutUs />} />
