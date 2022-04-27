@@ -25,8 +25,8 @@ const Button = () => {
       >
         <div className="furniture-button">
           <h2>Furniture</h2>
-          <span id="furn-span">{show ? furnCur1() : furnCur2()}</span>
-          <span>{dropDown ? <DropDown /> : <></>}</span>
+          <span id="furnCur">{show ? furnCur1() : furnCur2()}</span>
+          <span id="drop-down-box">{dropDown ? <DropDown /> : <></>}</span>
         </div>
       </button>
     </>
