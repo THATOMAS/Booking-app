@@ -2,7 +2,7 @@
 import React from "react";
 
 import Navbar from "./HomePage/Navbar/Navbar";
-import PageInfo from "./HomePage/PageInfo";
+import PageInfo from "./HomePage/PageInfo/PageInfo";
 import PhotoBox from "./HomePage/PhotoBox";
 import CursorBox from "./HomePage/CursorBox";
 

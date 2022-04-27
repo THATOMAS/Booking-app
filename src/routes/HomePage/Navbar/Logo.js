@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { homeLOGO } from "../../../SVG";
 const Logo = () => {
   return (
     <>
-      <div>{homeLOGO()}</div>
+      <Link to="/welcome" style={{ cursor: "pointer" }}>
+        {homeLOGO()}
+      </Link>
     </>
   );
 };

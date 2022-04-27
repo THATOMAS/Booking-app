@@ -1,0 +1,69 @@
+.Paragraph{
+    width: 40vw;
+    height: 75%;
+    
+}
+
+#heading-span{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 40vw;
+    height: fit-content;
+    
+}
+#paragraph-heading{
+    padding-left: 30px;
+    font-family: 'Quicksand';
+    font-size: 50px;
+    height: 128px;
+    width: 458px;
+    left: 106.27963256835938px;
+    top: 256px;
+    border-radius: nullpx;
+    
+}
+.para-text{
+    font-size: 25px;
+    height: fit-content;
+    
+}
+
+#orangeLine{
+    
+    background: #E58411;
+    height: 127.95738983154297px;
+    width: 7.616511344909668px;
+    left: 88px;
+    top: 256px;
+    border-radius: 11.42476749420166px;
+    
+}
+#underLine{
+    
+    background: #E58411;
+    height: 4px;
+    width: 525px;
+    left: 127px;
+    top: 572px;
+    border-radius: 15px;
+}
+.Nearest-Store{
+        background: #E58411;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 132px;
+        width: 448px;
+        left: 159px;
+        top: 671px;
+        border-radius: 50px;
+    }
+    .store-link{
+        font-family: "Quicksand";
+        font-size: 50px;
+        text-decoration: none;
+        color: white;
+}

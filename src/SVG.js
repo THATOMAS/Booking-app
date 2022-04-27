@@ -48,3 +48,18 @@ export const furnCur2 = () => {
     </svg>
   );
 };
+
+export const orangeLine = () => {
+  return (
+    <svg
+      id="orangeLine"
+      width="8"
+      height="128"
+      viewBox="0 0 8 128"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="7.61651" height="127.957" rx="3.80826" fill="#E58411" />
+    </svg>
+  );
+};

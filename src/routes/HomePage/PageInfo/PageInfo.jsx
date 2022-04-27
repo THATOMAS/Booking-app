@@ -1,15 +1,18 @@
 import React from 'react'
-
+import './PageInfo.css'
+import Paragraph from './Paragraph'
+import NearestStore from './NearestStore'
 const PageInfo = () =>{
     return( <>
     
     <div className="page-Info" 
-        style={{background:'rgba(235, 115, 137,0.3)',
+        style={{
         gridArea: '2 / 1 / span 1 / span 1',
-        width:'50vw',
+        width:'fit-content',
         height:'60vh'
         }}>
-        <h3>Page info goes here</h3>
+        <Paragraph/>
+        <NearestStore/>
         </div>
         </>
        )

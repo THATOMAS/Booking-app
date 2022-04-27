@@ -5,7 +5,7 @@ import { furnCur1, furnCur2 } from "../../../SVG";
 
 const Button = () => {
   const [show, setShow] = useState(true);
-  const [dropDown, setDropDown] = useState(true);
+  const [dropDown, setDropDown] = useState(false);
 
   const Click = () => {
     setShow(!show);
