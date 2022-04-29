@@ -1,15 +1,18 @@
 import React from 'react'
-
+import {BottomCursor} from '../../../SVG'
+import './CursorBox.css'
 const CursorBox = ()=>{
     return(<>
     
         <div className="cursor-Box" 
-        style={{background:'rgba(118, 31, 224,0.5)',
+        style={{
         gridArea: '3 / 1 / span 1 / span 2',
         width:'100vw',
         height:'20vh'
         }}>
-      <h3>Cursor goes here</h3>
+          <div className='bottom-cursor'>
+              {BottomCursor()}
+          </div>
         </div>
     </>)
 }
