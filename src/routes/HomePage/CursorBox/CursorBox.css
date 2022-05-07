@@ -1,0 +1,10 @@
+.cursor-Box{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+.bottom-cursor{
+    
+    padding-top:25px;
+    transform:scale(2)
+}
