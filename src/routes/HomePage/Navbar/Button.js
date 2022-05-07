@@ -19,14 +19,14 @@ const Button = () => {
   return (
     <>
       <button
-        className={show ? "navItem" : "navItemOff"}
+        className="navItem"
         onClick={Click}
         onMouseLeave={Leaving}
       >
         <div className="furniture-button">
           <h2>Furniture</h2>
           <span id="furnCur">{show ? furnCur1() : furnCur2()}</span>
-          <span id="drop-down-box">{dropDown ? <DropDown /> : <></>}</span>
+          <span id="drop-down-box">{dropDown ? <DropDown  /> : <></>}</span>
         </div>
       </button>
     </>

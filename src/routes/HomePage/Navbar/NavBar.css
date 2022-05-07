@@ -58,9 +58,6 @@ input[type="reset"] {
     margin-right: 7vw;
 }
 
-.navItemOff {
-    display: none;
-}
 
 .navItem:active {
     color: #E58411;

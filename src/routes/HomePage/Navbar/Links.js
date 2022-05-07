@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
+
 
 const Links = () => {
   return (
     <>
+      <Button/> 
       <Link to="shop" className="navItem">
         <h2>Shop</h2>
       </Link>
