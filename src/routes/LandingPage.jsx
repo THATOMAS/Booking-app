@@ -6,6 +6,8 @@ const LandingPage = () => {
   const titleRef = useRef();
   const titleRef2 = useRef();
 
+  const background = require('./../assets/landingPage/background.jpg')
+
   function toTop() {
     titleRef.current.scrollIntoView({ behavior: "smooth" });
   }
@@ -14,31 +16,62 @@ const LandingPage = () => {
     titleRef2.current.scrollIntoView({ behavior: "smooth" });
   }
 
+// document.body.style.background = `url(${background})`
+// document.body.style.backgroundRepeat = 'no-repeat'
+// document.body.style.backgroundSize = 'cover'
   return (
     
-    <section className='LandingPage'  >
-      <article className="FirstPage Scroll-Page" ref={titleRef}>
-        <Link to ='/welcome'className="brand-logo">
+    <section >
+      
+      <article 
+      ref={titleRef}
+      id='landing-page-top-view'
+      >
+        
+        <Link to ='/welcome' >
           <img src={require("../assets/landingPage/logo.png")} alt="" />
         </Link>
-        <div className="center-image">
+        
+        <div >
           <img src={require("../assets/landingPage/pageImage.jpg")} alt="" />
         </div>
-        <div className="toBottom" onClick={toBottom}>
-          <img src={require("../assets/landingPage/bottomCursor.png")} alt="" />
+
+        <div  onClick={toBottom}>
+          <img 
+          src={require("../assets/landingPage/bottomCursor.png")} 
+          alt="" 
+          style={{height:'4.5em'
+          ,width:'4.5em',
+          cursor:'pointer'}}
+          />
         </div>
+      
       </article>
 
-      <article className="SecondPage Scroll-Page" ref={titleRef2}>
-        <div classname="toTop" onClick={toTop}>
-          <img src={require("../assets/landingPage/topCursor.png")} alt="" />
+      <article  
+      ref={titleRef2}
+      id='landing-page-bottom-view'
+      >
+        
+        <div onClick={toTop} >
+          <img 
+          style={{height:'4.5em',width:'4.5em',cursor:'pointer'}}
+          src={require("../assets/landingPage/topCursor.png")}
+          alt="" />
         </div>
-        <Link to='/welcome' className="mini-logo">
-          <img src={require("../assets/landingPage/miniLogo.png")} alt="" />
+        
+        <Link to='/welcome' >
+          <img 
+          src={require("../assets/landingPage/miniLogo.png")} 
+          alt=""
+          id="mini-logo"
+           />
         </Link>
-        <div className="pageText">
-        <h1 style={{fontFamily:'Quicksand',fontSize:'5em',textAlign:'center'}}>we take style & minimilism<br/>to new heights. </h1>
+        
+        <div >
+          <h1 style={{fontFamily:'Quicksand',fontSize:'5em',textAlign:'center'}}>we take style & minimilism<br/>to new heights. </h1>
         </div>
+      
       </article>
     </section>
   );
