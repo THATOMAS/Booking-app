@@ -231,32 +231,26 @@ background: aqua;}
 }
 
 /* First page */
-#Welcome-page{
+#welcome-page{
   height: 100vh;
   width: 100vw;
   background: green;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 #info-box{
-  height: 85%;
-  width: 35vw;
+  height: 85vh;
+  width: 50%;
   background: yellow;
   display: flex;
   flex-direction: column;
 }
-#photo-box{
-  height: 85%;
-  width: 65vw;
-background: red;
-
-}
 
 #page-heading-box{
-  height: 20%;
+  height: fit-content;
   width: 100%;
   background: purple;
   display: flex;
@@ -265,25 +259,52 @@ background: red;
 
 }
 
+
 #heading-stroke{
   height: 50%;
-  width: 1%;
-  background: pink;
+  width: 4px;
+  background: #E58411;
   
   border-radius: 10em;
 }
 
-#page-text{
-  font-size: 1.2em;
-  margin-top: 2em;
+#paragraph-text{
+height: fit-content;
+  width: 100%;
+  background: pink;
+  display: flex;
+  align-items: flex-start;
+  font-family: "Quicksand";
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#underline{
+  height: 3px;
+  width: 95%;
+  background: #E58411;
+  border-radius: 10em;
+  align-self: center;
+}
+
+
+#photo-box{
+  height: 85%;
+  width: 65vw;
+background: red;
 
 }
 
 #nearest-store{
-height: 15%;
-width: 70%;
-margin-left: 4em;
-background: aqua;}
+  height: 10%;
+  width: 70%;
+background: #E58411;
+border-radius: 50px;
+margin-top: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
 
 
