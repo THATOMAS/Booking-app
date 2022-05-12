@@ -15,20 +15,14 @@ body {
   color: black;
   overflow: hidden;
   background : url('./assets/landingPage/crisscross.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: scroll;
 }
 
 /* Landing page */
 main {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  overflow: hidden;
-}
-
-section{
-  height: 100vh;
+  
 }
 
 
@@ -113,8 +107,10 @@ section{
 }
 
 /* First page */
-#Welcome-page{
-  height: 100vh;
+
+
+.welcome-page{
+  height: fit-content;
   width: 100vw;
   background: green;
   display: flex;
@@ -123,8 +119,8 @@ section{
   align-items: flex-end;
 }
 
-#info-box{
-  height: 85%;
+.info-box{
+  height: fit-content;
   width: 35vw;
   background: yellow;
   display: flex;
@@ -231,47 +227,50 @@ background: aqua;}
 }
 
 /* First page */
+
 #welcome-page{
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
-  background: green;
+  /*background: green;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
+
+/*Infomation box*/
 #info-box{
-  height: 85vh;
+  height: 70vh;
   width: 50%;
-  background: yellow;
+  /*background: yellow;*/
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 #page-heading-box{
   height: fit-content;
   width: 100%;
-  background: purple;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  background: none;
 
 }
 
 
-#heading-stroke{
-  height: 50%;
-  width: 4px;
+.heading-stroke{
+  height: 5em;
+  width: 5px;
   background: #E58411;
-  
   border-radius: 10em;
 }
 
 #paragraph-text{
 height: fit-content;
   width: 100%;
-  background: pink;
   display: flex;
   align-items: flex-start;
   font-family: "Quicksand";
@@ -288,27 +287,39 @@ height: fit-content;
 }
 
 
-#photo-box{
-  height: 85%;
-  width: 65vw;
-background: red;
-
-}
 
 #nearest-store{
-  height: 10%;
-  width: 70%;
+  height: 4em;
+  width: 16em;
 background: #E58411;
 border-radius: 50px;
 margin-top: 30px;
+margin-left: 0em;
 display: flex;
 align-items: center;
 justify-content: center;
+justify-items: flex-start;
 }
 
+/*Photo Box*/
 
+#photo-box{
+  height: 70vh;
+  width: 65vw;
+  background: none;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
 
-
-
-
-
+#photo{
+height: 70vh;
+width: 50vw;
+box-shadow: 5px 16px 23px 8px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+transform: rotate(-12deg);
+background:url('./assets/homePage/FirstPage/homePagePhoto.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}

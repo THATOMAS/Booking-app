@@ -1,11 +1,16 @@
 import React from "react";
+import "./../index.css"
+
 
 const WelcomePage = () => {
     return <section>
-      <article id="welcome-page">
+      <article id='welcome-page' 
+      >
         <div id='info-box'>
           <div id='page-heading-box'>
-            <div id='heading-stroke' style={{marginLeft:"0.4em"}}></div>
+            <div className='heading-stroke'>
+            </div>
+            
             <h3 style={{fontFamily:'Quicksand',
             fontSize:'2.5em',
             marginLeft:"0.4em"
@@ -31,7 +36,9 @@ you will get awesome customer service .</p>
 
         
         
-        <div id="photo-box"></div>
+        <div id="photo-box">
+          <div id='photo'></div>
+        </div>
       </article>
       </section>;
   
