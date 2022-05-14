@@ -10,13 +10,14 @@ import './NavBar.css'
 const Navbar = () => {
   return (
     <>
+       
       <div
         className="navItems"
         style={{
           gridArea: "1 / 1 / span 1 / span 2",
           width: "100%",
           height: "fit-content",
-        
+          background:'green'
         }}
         >
         <Logo/>
