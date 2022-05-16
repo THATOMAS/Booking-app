@@ -20,7 +20,10 @@ const WelcomePage = () => {
           <p id='paragraph-text'>Great raw materials,exceptional quality and 
 unperalleled craftsmanship is what we give you.<br/><br/>
 With our experince in the furniture business 
-you will get awesome customer service .</p>
+you will get awesome customer service .
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
+of type and scrambled it to make a type specimen book. 
+</p>
 
   <div id='underline'></div>
 
