@@ -17,7 +17,7 @@ const Navbar = () => {
           gridArea: "1 / 1 / span 1 / span 2",
           width: "100%",
           height: "fit-content",
-          background:'green'
+        
         }}
         >
         <Logo/>
