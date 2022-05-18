@@ -1,11 +1,17 @@
+import React,{useState} from 'react'
+
 import itemData from "../ShopPage/ShopItemsData";
 
 
-const Shopping = () =>{
+const Shopping = ({Cart}) =>{
+
+
   return(
-        <article id="shop-items-box">
+        <article id="shop-items-box" >
+        
           {itemData.map((item)=>{
             return(
+
               <div id={item.id} className={item.cName}>
                 <div style={{background:`url(${item.img})`,
                 backgrounPosition:'center',
@@ -33,7 +39,7 @@ const Shopping = () =>{
                 <div className="shop-item-name-box">
                   <div className='item-name-rating-box'>
                     <h3 id="shop-item-name">{item.name}</h3>
-                    <div id="cart"/>
+                    <Cart/>
                   </div>
                 </div>
 
