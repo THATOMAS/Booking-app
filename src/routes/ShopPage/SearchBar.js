@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 // const
 
-const SearchBar = ({ count }) => {
+const SearchBar = ({ count,showCart }) => {
   const [clear, setClear] = useState(false);
 
   return (
     <article id="search-bar-box">
-      <div id="shopping-icon">
+      <div id="shopping-icon" onClick={showCart}>
         <div id="shopping-icon-number-circle">
           {<p id="shopping-icon-number">{count}</p>}
         </div>
