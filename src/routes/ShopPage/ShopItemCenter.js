@@ -1,15 +1,14 @@
 import React,{useState} from 'react'
 
-import itemData from "../ShopPage/ShopItemsData";
 
 
-const Shopping = ({Cart}) =>{
+const Shopping = ({Cart,items}) =>{
 
 
   return(
         <article id="shop-items-box" >
         
-          {itemData.map((item)=>{
+          {items.map((item)=>{
             return(
 
               <div id={item.id} className={item.cName}>
@@ -43,9 +42,10 @@ const Shopping = ({Cart}) =>{
                   </div>
                 </div>
 
-                  <div style={{height:'3em'
+                  <div style={{height:'8%'
                   ,width:'50%',
                   background:`url(${item.stars})`,
+                  backgroundSize:'contain',
                   backgrounPosition:'center',
                   backgroundRepeat:'no-repeat'
 

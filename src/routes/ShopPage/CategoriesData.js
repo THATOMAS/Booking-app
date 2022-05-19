@@ -1,7 +1,7 @@
 const Categories = [
-  { name: "chairs", cNmae: "category" },
-  { name: "tables", cNmae: "category" },
-  { name: `lamps`, cNmae: "category" },
+  { id:1,name: "chairs", cName: "category" },
+  { id:2,name: "tables", cName: "category" },
+  { id:3,name: `lamps`,  cName: "category"},
 ];
 
 export default Categories;
